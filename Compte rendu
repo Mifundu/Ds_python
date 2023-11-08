@@ -1,0 +1,57 @@
+Fichier Ds : Gestion d'enregistrement, d'authentification et de menus
+
+Ce premier code gère un système d'enregistrement et d'authentification d'utilisateurs, suivi d'un menu interactif avec deux fonctionnalités : un jeu de roulette et un chiffrement César.
+
+    Enregistrement et Authentification :
+        L'utilisateur est invité à s'enregistrer en fournissant son adresse e-mail et en créant un mot de passe.
+        Les vérifications sont effectuées pour garantir la validité de l'adresse e-mail et la complexité du mot de passe.
+        Les informations de l'utilisateur sont enregistrées dans un fichier "Enregistrement.txt".
+        L'utilisateur est ensuite invité à s'authentifier en entrant son adresse e-mail et son mot de passe.
+        Les informations d'authentification sont comparées à celles du fichier "Enregistrement.txt".
+        Si l'authentification réussit, l'utilisateur accède à un menu principal.
+
+    Menu Principal :
+        Le menu principal offre deux options : jouer à la roulette ou effectuer un chiffrement César.
+        Les choix de l'utilisateur sont gérés via des boucles et des fonctions appropriées sont appelées en fonction de ses sélections.
+
+    Menu Roulette :
+        Le menu de la roulette permet à l'utilisateur de jouer à un jeu de roulette.
+        Les paris sont placés, des nombres aléatoires sont générés, et les résultats sont calculés.
+        Les gains/pertes sont mis à jour en fonction des résultats.
+
+    Menu Chiffrement César :
+        Le menu de chiffrement César permet à l'utilisateur de chiffrer un mot à l'aide de deux méthodes de chiffrement César (code ASCII ou 26 lettres de l'alphabet).
+
+    Conclusion :
+        Le code offre une expérience d'enregistrement, d'authentification, et d'accès à des fonctionnalités interactives.
+        Il permet à l'utilisateur de jouer à la roulette et de chiffrer des mots à l'aide de l'algorithme César.
+        Le code utilise des bibliothèques externes comme "maskpass" et "colorama" pour améliorer l'expérience utilisateur.
+
+Fichier jeu : Simulation d'un jeu de roulette
+
+Le deuxième code est une fonction roulette() qui simule un jeu de roulette.
+
+    Initialisation du solde et boucle principale :
+        Le jeu commence en demandant à l'utilisateur le montant avec lequel il souhaite jouer.
+        Une boucle externe permet à l'utilisateur de jouer plusieurs parties en entrant 's'.
+
+    Saisie de la mise et des numéros :
+        L'utilisateur est invité à saisir sa mise pour le tour et un numéro sur lequel placer la mise.
+        Des vérifications sont effectuées pour garantir la validité des entrées.
+
+    Résultat du tour :
+        Un numéro gagnant aléatoire est généré.
+        Les résultats du tour sont calculés en fonction du numéro gagnant et des choix de l'utilisateur.
+        Le solde est mis à jour en conséquence.
+
+    Options de continuation et de nouvelle partie :
+        Après chaque tour, l'utilisateur peut choisir de continuer ou de quitter le jeu.
+        À la fin de chaque partie, l'utilisateur peut choisir de lancer une nouvelle partie ou de quitter le jeu.
+
+    Conclusion :
+        La fonction simule un jeu de roulette basique avec des mises, des résultats aléatoires et des gains/pertes.
+        Elle offre à l'utilisateur la possibilité de jouer plusieurs parties et de quitter le jeu à tout moment.
+
+Fichier Main : Exécution.
+
+Importation du module DS puis appel de la fonction prog pour l'exécution du programme.
